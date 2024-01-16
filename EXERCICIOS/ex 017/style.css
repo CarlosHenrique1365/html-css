@@ -1,0 +1,18 @@
+@charset "UTF-8";
+body{
+    background-image: linear-gradient(to right,rgba(104, 101, 106, 0.875),rgba(49, 49, 51, 0.788),rgba(36, 36, 37, 0.742));
+}
+
+div{
+    border: solid 1px black;
+    border-style: solid;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgba(255, 248, 220, 0.767);
+    text-align: center;
+    font: normal lighter 16px Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow:2px 2px rgba(0, 0, 0, 0.218);
+}

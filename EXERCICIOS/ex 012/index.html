@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ept-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <h2>Maneira simples</h2>
+    <p><video src="midia/videomkv.mkv" width="500" controls preload="auto" ></video></p>
+    <p><video src="midia/videomp4.mp4" width="500" controls preload="metadata"></video></p>
+    <p><video src="midia/videowebm.webm" width="500" controls preload="none"></video></p>
+    
+    <h2>Maneira rebuscada<!-- semelhante a maneira de imagem dinâmica--></h2>
+    <video width="500" poster="OIP.jpeg" controls>
+      <source src="midia/videomkv.mkv" type="video/mkv">
+      <source src="midia/videomp4.mp4" type="video/mp4">
+      <source src="midia/videowebm.webm" type="video/webm">
+      <p>Seu navegador não tem compatibilidade com reproduçaõ de vídeos</p>
+    </video>
+    <h2>Inserindo vídeos do youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=X1nAXeR0ffQtL86K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+</body>
+</html>

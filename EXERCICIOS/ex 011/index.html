@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mídias em HTML5</title>
+</head>
+        
+            <div class="container">
+                <div class="midia">
+                    <div class="img">
+                        <h1>Imagens dinâmicas</h1>
+                        <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente almente ou diminua o tamanho do seu navegador.</p>
+                        <picture>
+                            <source media="(max-width:750px )" srcset="imagem/imgp.png" type="image/png  ">
+                            <source media="(max-width:1050px)" srcset="imagem/imgm.png" type="image/png">
+                            <img src="imagem/imgg.png" alt="Imagem flexível">
+                        </picture>
+                    </div>
+                    
+                    
+                    
+                <div class="audio">
+                    <h1>Reproduzindo Audio</h1>
+                    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+                    <audio src="midia/Helium - TrackTribe.mp3" controls autoplay></audio>
+                    <audio preload="none" controls>
+                        <source src="midia/Helium - TrackTribe.mp3" type="audio/mpeg">
+                        <source src="midia/Helium - TrackTribe.ogg" type="audio/ogg">
+                        <source src="midia/Helium - TrackTribe.wav" type="audio/wav">
+                        <p>Infelizmente seu navegador não consegue reproduzir áudio <a href="midia/Helium - TrackTribe.mp3">Clique para fazer dowloas</a></p>
+                                </audio>
+                </div>
+                </div>
+            </div>
+</body>
+</html>

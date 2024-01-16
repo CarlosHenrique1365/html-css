@@ -1,0 +1,22 @@
+@charset "UTF-8";
+div{
+    
+    
+}
+.box{
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    border: 20px;
+    border-style: double;
+    background-color: bisque;
+    text-align: center;
+    font-family: cursive;
+}
+ol{
+   color: cadetblue;
+
+}
+h2{
+    color: darkslategray;
+}

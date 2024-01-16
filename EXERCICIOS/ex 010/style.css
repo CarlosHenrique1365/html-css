@@ -1,0 +1,9 @@
+@charset "UTF-8";
+body{
+    background-color: rgba(187, 136, 58, 0.558);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    text-align: center;
+}
