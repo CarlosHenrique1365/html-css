@@ -1,13 +1,17 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap');
+
+
 *{
     margin: 0px;
     padding: 0px;
 }
 :root{
-    --font-destaque:'saint_carell';
-    --font-titulo:;
-    --font-padrao:;
+    --font-destaque:'Source Code Pro';
+    --font-padrao:'Shantell Sans';
 }
 
 html,body{
@@ -16,10 +20,12 @@ html,body{
 }
 
 header{
-    
+    font-family: var(--font-destaque);
+    font-size: 3vw;
     background-color: black;
     color: white;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 header > h1{
@@ -43,9 +49,10 @@ header a:hover, footer a:hover{
     transition-duration: 0.4s;
 }
 section{
+    font-family: var(--font-padrao);
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
+    line-height: 3vw;
     padding-left: 30px;
 }
 
@@ -55,13 +62,13 @@ section.normal{
 }
 
 section.imagem{
+    
     background-color: rgba(51, 51, 51, 0.749);
-    background-image: url('imagens/background001.jpg');
     color: white;
 }
 
 section.imagem > p{
-    width: 400px;
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.253);
 }
 footer{
