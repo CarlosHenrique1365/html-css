@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: monospace;
+            text-align: center;
+        }
+
+        table{
+            font-family: monospace;
+            border-collapse: collapse;
+            background-color: rgb(216, 215, 182);
+            margin: auto;
+        }
+
+        caption{
+            background-color: rgb(203, 202, 202);
+            border: 1px solid rgb(14, 2, 40);
+        }
+
+        td{
+            border: 1px solid rgb(14, 2, 40);
+            padding: 15px;
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            /*vertical-align: top e outros atributos;
+            serve para alinhar meu conteúdo dentro da célula. 
+            */
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de células</h1>
+    <table>
+        <caption>Tabela Teste de Mesclagem</caption>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+        </tr>
+        <tr>
+            <td rowspan="3">D</td>
+            <td>E</td>
+            <td rowspan="2">F</td>
+        </tr>
+        <tr>
+            <td>I</td>
+        </tr>
+        <tr>
+            
+            <td>K</td>
+            <td>L</td>
+        </tr>
+    </table>
+</body>
+</html>

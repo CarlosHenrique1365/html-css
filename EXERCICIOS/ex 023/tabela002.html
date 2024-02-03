@@ -20,8 +20,14 @@
             width: 300px;
             background-color: rgba(255, 253, 250, 0.766);
             border-collapse: collapse;
+            position: relative;
         }
 
+        thead > tr >th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
         thead,tfoot{
         background-color: gray;
         color: white;
