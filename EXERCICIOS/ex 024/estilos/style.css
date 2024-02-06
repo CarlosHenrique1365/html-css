@@ -1,0 +1,29 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: black;
+    color: grey;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+}
+
+h1{
+    text-align: center;
+}
+
+iframe{
+    display: block;
+    margin: auto;
+    width: 400px;
+}
+main{
+    max-width: 800px;
+    background-color: rgb(58, 58, 118);
+    margin: auto;
+    text-align: center;
+    
+}
