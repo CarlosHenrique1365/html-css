@@ -18,11 +18,12 @@ h1{
 iframe{
     display: block;
     margin: auto;
-    width: 400px;
+    width: 100vh;
+    height: 500px;
 }
 main{
     max-width: 800px;
-    background-color: rgb(58, 58, 118);
+    background-color: rgb(4, 4, 17);
     margin: auto;
     text-align: center;
     
