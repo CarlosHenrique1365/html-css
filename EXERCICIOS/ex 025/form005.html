@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: monospace;
+        }
+
+        body{
+            background-image: url('OIP.jpeg');
+            background-image: linear-gradient(to right, rgb(35, 34, 34), rgb(55, 50, 50));
+        }
+        h1{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: rgb(104, 98, 98);
+            color: rgb(20, 18, 18);
+            box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.237);
+            border-radius: 0px 0px 4px 4px;
+            font-weight: bolder ;
+            font-size: 2.4em;
+            text-align: center;
+        }
+
+        form{
+            font-size: 1.2em;
+            padding: 10px;
+            margin-left: 10px;
+            color: rgb(143, 164, 165);
+        }
+
+        legend{
+            color: rgb(227, 215, 215);
+            padding: 5px;
+        }
+
+        fieldset{
+            border-radius: 6px;
+            box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.39);
+            border: 1px solid rgb(104, 98, 98);
+            padding: 15px;
+            background-color: rgb(91, 91, 91);
+            
+        }
+        p{
+            text-align: center;
+            padding: 10px;
+        }
+
+        p > input{
+            padding: 5px;
+            border-radius: 3px;
+            font-weight: 900;
+        }
+        p > input:hover{
+            background-color: black;
+            color: white;
+            transition-duration: 0.8s;
+            padding: 8px ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasc">
+            <label for="imasc">Masculino</label> <br>
+            <input type="radio" name="sexo" id="ifem">
+            <label for="ifem">Feminino</label> <br>
+            <input type="radio" name="sexo" id="ioutros">
+            <label for="ioutros">Outros</label>
+
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend> <br>
+            <input type="checkbox" name="esfut" id="iesfut" checked>
+            <label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esvolei" id="ivole">
+            <label for="ivole">Vôlei</label> <br>
+            <input type="checkbox" name="eshande" id="ihande">
+            <label for="ihande">Handebal</label> <br>
+            <input type="checkbox" name="espete" id="ipet">
+            <label for="ipet">Peteca</label> <br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
