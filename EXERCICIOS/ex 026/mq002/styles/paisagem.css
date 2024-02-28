@@ -1,2 +1,9 @@
 @charset "UTF-8";
 /* Aparelho deitado (landscape)*/
+
+body{
+    background-image: url(../imagem/OIP.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
