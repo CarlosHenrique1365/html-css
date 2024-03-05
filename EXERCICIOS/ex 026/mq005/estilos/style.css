@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family:'Geizer' ;
+    src: url(../fontes/geizer/);
+}
+
+:root{
+    --fontdestque:'Geizer';
+}
+
+body{
+    width: 100wh;
+    height: 100vh;
+    background-image:  url(../imagens/backimg.jpeg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    background-color: rgba(27, 22, 22, 0.645);
+    padding-top: 25px;
+    height: px;
+}
+
+header > h1{
+    font-family: var(--fontdestque);
+    text-align: center;
+    color: white;
+    margin-bottom: 35px;
+}
+
+i#hamburguer{
+    background-color: black;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 3px;
+    cursor: pointer;
+}
+
+i#hamburguer:hover{
+    background-color: rgb(71, 68, 68);
+    color: rgb(191, 186, 186);
+    transition-duration: 0.8s;
+}
+
+
+menu{
+    display: none;
+    text-align: center;
+    background-color: black;
+    
+}
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    padding: 3px;
+}
+menu > ul > li:hover{
+    background-color: rgb(71,68,68);
+    transition-duration: 0.8s;
+}
+
+main{
+    height: 100vh;
+    width: 80vw;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.381);
+    padding: 10px;
+    text-indent: 1em;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 4px 4px 3px rgba(255, 255, 255, 0.46);
+}
+
+main > h2  {
+    color: rgb(57, 54, 54);
+}
+
+main > p{
+    color: rgb(57, 54, 54);
+}
+footer{
+    font-family: var(--fontdestque);
+    background-color: rgba(27, 22, 22, 0.568);
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+

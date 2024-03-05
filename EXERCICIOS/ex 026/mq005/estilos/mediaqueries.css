@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+@media screen and (min-width:770px){
+    i#hamburguer{
+        display: none;
+    }
+
+    menu{
+        display: block;
+    }
+
+    menu ul li {
+        display: inline-block;
+        text-align: center;
+        width: 200px;
+        padding: 1.2rem;
+    }
+}

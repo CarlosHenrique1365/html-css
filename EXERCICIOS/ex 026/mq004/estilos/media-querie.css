@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+/*Todas as Demais Versões*/
+/*Typical Device Breakpoints dimensões em px para cada tamanho de tela*/
+
+
+
+/*@media screen and (max-width:600px) {
+    
+}
+
+@media screen and (min-width:600px) and (max-width:768px){
+    background-image: ;
+}
+!! Essa parte eu posso ignorar esse media pois eu crieie meu site baseado em dispositivos moveis!!
+*/
+@media print{
+
+    *{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    body{
+        background-image: url(../imagens/back-print.jpg);
+        background-color: white;
+        line-height: 1em;
+    }
+
+    main{
+        border: 1px inset black;
+        border-radius: 10px;
+        box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.24);
+    }
+
+    main::after{
+        content: 'Seja bem-vindo a página de impressão!!';
+        text-decoration: overline;
+
+    }
+    img#desktop { display: none; }
+    img#smartphone { display: none; }
+    img#impressão { display: block; }
+    img#tablet { display: none; }
+    img#televisão { display: none; }
+
+}
+
+@media screen and (min-width:770px) and (max-width:992px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+     }
+
+    img#desktop { display: none; }
+    img#smartphone { display: none; }
+    img#impressão { display: none; }
+    img#tablet { display: block; }
+    img#televisão { display: none; }
+}
+
+@media screen and (min-width:992px) and (max-width: 1200px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    
+    img#desktop { display: block; }
+    img#smartphone { display: none; }
+    img#impressão { display: none; }
+    img#tablet { display: none; }
+    img#televisão { display: none; }
+}
+
+@media screen and (min-width:1200px){
+
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#desktop { display: none; }
+    img#smartphone { display: none; }
+    img#impressão { display: none; }
+    img#tablet { display: block; }
+    img#televisão { display: none; } 
+}
